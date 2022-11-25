@@ -1,6 +1,6 @@
 import unittest
 
-from Demo import add
+from Demo import mul
 
 
 class TestAdd(unittest.TestCase):
