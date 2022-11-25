@@ -5,22 +5,22 @@ from Demo import add
 
 class TestAdd(unittest.TestCase):
     def test_simple(self):
-        a = 2
+        a = 3
         b = 3
-        c = add(a, b)
-        self.assertEqual(c, a+b)
+        c = mul(a, b)
+        self.assertEqual(c, a*b)
 
     def test_medium(self):
-        a = 12345678987654321
-        b = 98765432123456789
-        c = add(a, b)
-        self.assertEqual(c, a+b)
+        a = 100
+        b = 666
+        c = mul(a, b)
+        self.assertEqual(c, a*b)
 
     def test_hard(self):
-        a = 12345678987654321.8967452310
-        b = 98765432123456789.2143658709
-        c = add(a, b)
-        self.assertEqual(c, a+b)
+        a = -3
+        b = 474994
+        c = mul(a, b)
+        self.assertEqual(c, a*b)
 
 
 if __name__ == "__main__":
